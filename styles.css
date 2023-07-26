@@ -9,18 +9,18 @@
 /*  //  BODY  //  */
 
 body{
-    background-color: #555555;
-    display: flex;
+    background-color: #333333;
+    display: flex ;
 }
 
 /*  //  NAV  //  */
 
-nav {
-    background: rgb(131,142,156);
+#navbar {
+    background: red;
     background: linear-gradient(-90deg, rgba(131,142,156,1) 80%, rgba(62,72,85,1) 100%);
-    width: 250px;
+    width: 20%;
     height: 100%;
-    position: fixed;
+    position: fixed ;
     top: 0;
     left: 0;
     overflow: auto;
@@ -43,24 +43,23 @@ ul {
 h1 {
     text-align: center;
     font-family: poppins;
-    font-family: ;
 }
 
 #navbar li {
     text-align: center;
     border-bottom: 2px solid grey;
-    padding: 25px;
+    padding: 10%;
     font-size: 20px;
 }
 
 /*  //  MAIN  //  */
 
 main {
-    background: rgb(108,108,108);
-    background: linear-gradient(-90deg, rgba(108,108,108,1) 97%, rgba(62,72,85,1) 100%);
-    margin-left:250px;
+    background: rgb(128,124,122);
+    background: linear-gradient(90deg, rgba(128,124,122,1) 10%, rgba(204,205,199,1) 48%);
+    margin-left:20%;
     width: 100%;
-    padding: 20px 15px;
+    padding: 0% 5%;
 }
 
 /*  //  SECTION  //  */
@@ -68,42 +67,39 @@ main {
 section {
     background: rgb(204,205,199);
     background: linear-gradient(0deg, rgba(204,205,199,1) 54%, rgba(144,144,144,1) 85%);
-    margin: 10px;
+    margin: 5% ;
     padding: 0px 0px;
     scroll-margin-top: 30px ;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 2px #222222;
-    height:450px;
-    min-height: 450px;
+    height:px;
+    min-height: px;
 }
 
 .encabezado {
-    padding: 10px 20px;
+    padding: 2% 5%;
     text-align: left;
-    margin-bottom:10px;
+    margin-bottom: 5%;
 }
 
 h2 {
     margin-bottom: 0px;
     display: flex;
-    padding: 10px 0px;
+    padding: 2% 0px;
 }
 
 .ubicacion {
-    border:  2px red;
     width: 20%;
     display: inline-block;
     margin-left: 3%;
 }
 
 .fecha {
-    border:  2px green;
     width: 20%;
     display: inline-block;
 }
 
 .horario {
-    border:  2px violet;
     width: 20%;
     display: inline-block;
 }
@@ -115,7 +111,7 @@ h2 {
 .cronica {
     border-top: solid 2px #556655 ;
     border-bottom: solid 2px #556655;
-    padding: 10px 25px;
+    padding: 3% 5%;
     height: 150px;
     overflow: auto;
 }
@@ -129,15 +125,17 @@ h2 {
 }
 
 .goles {
-    padding-top: 15px;
+    padding-top: 2%;
     margin-left: 3%;
-    display: ;
+    border: solid 3px blue;
 }
 
 .goles_lista {
     margin-left: 5%;
     margin-top: 2%;
     display: inline-block;
+    border: solid 2px violet;
+    min-width:200px ;
 }
 
 .gol {
@@ -157,15 +155,18 @@ h4 {
 }
 
 .formacion {
-    margin-right:;
-    position: relative;
+    position:;
     left: 35% ;
+    border: solid 2px green;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: right;
 }
 
 .formacion_img {
-    width: 300px;
-    position: relative;
-    right: 0;
+    width: 60%;
+    border: solid 3px orange;
 }
 
 /*  //  SECTION:TARGET  //  */
@@ -189,38 +190,7 @@ section:target h2{
     color: white;
 }
 
-/*
+
 @media (max-width: 700px) {
-    nav {
-        width:100%;
-        height: 150px;
-        position: fixed;
-        display: flex;
-        float: ;
-        overflow: hidden;
-        align-items: center;
-        border: solid 2px red;
-    }
 
-    h1 {
-        padding: 0 35px;
-    }
-
-    #navbar li {
-        display: inline-block;
-        height: 10px;
-        border: solid 3px green;
-        align-items: center;
-    }
-
-    main {
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-
-
-    section {
-        scroll-margin-top: 170px;
-    }
-  }
-  */
+}
