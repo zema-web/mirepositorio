@@ -127,14 +127,12 @@ h2 {
 .goles {
     padding-top: 2%;
     margin-left: 3%;
-    border: solid 3px blue;
 }
 
 .goles_lista {
     margin-left: 5%;
     margin-top: 2%;
     display: inline-block;
-    border: solid 2px violet;
     min-width:200px ;
 }
 
@@ -155,9 +153,7 @@ h4 {
 }
 
 .formacion {
-    position:;
     left: 35% ;
-    border: solid 2px green;
     width: 40%;
     height: 60%;
     display: flex;
@@ -166,7 +162,6 @@ h4 {
 
 .formacion_img {
     width: 60%;
-    border: solid 3px orange;
 }
 
 /*  //  SECTION:TARGET  //  */
