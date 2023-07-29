@@ -1,0 +1,323 @@
+/*  //  BODY  //  */
+
+*{
+    font-family: poppins;
+}
+
+body {
+    background-color: #666666;
+}
+
+
+/*  //  ENCABEZADO  //  */
+
+.encabezado {
+    background: rgb(128,124,122);
+    background: linear-gradient(0deg, rgba(128,124,122,1) 10%, rgba(204,205,199,1) 40%, rgba(128,124,122,1) 90%);
+    display: flex;
+    height: 125px;
+}
+
+.encabezado_cont-imagen {
+    z-index: 1;
+}
+
+.encabezado_cont-imagen img {
+    width: 150px;
+    padding: 0px;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+.encabezado_cont-titulo {
+    margin: 0px 2%;
+    font-size: 23px;
+}
+
+
+/*  //  FIXED  //  */
+
+.fixed {
+    position: sticky;
+    top: 0;
+}
+
+
+/*  //  NAVEGADOR  //  */
+
+.cont-menu {
+    background: rgb(128,124,122);
+    background: linear-gradient(90deg, rgba(128,124,122,1) 10%, rgba(204,205,199,1) 40%, rgba(128,124,122,1) 90%);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top: solid 3px #b73c06;
+    border-bottom: solid 3px #b73c06 ;
+}
+
+.menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+
+.menu_item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.menu_item a:hover {
+    color:#b73c06
+}
+
+li {
+    list-style: none;
+    margin: 0px 5%;
+}
+
+
+/*  //  MAIN  //  */
+
+
+/*  //  estilos del HISTORIAL.HTML  //  */
+
+
+/*  //    Navegador Fechas    //  */
+
+.cont-fechas {
+    width: 15%;
+    height: 100%;
+    position: fixed ;
+    top: 170px;
+    left: 0;
+    overflow: auto;
+    border-right: #222222 solid 3px;
+    background-color: #ffffff88;
+}
+
+.cont-fechas::-webkit-scrollbar {
+    width: 1px;
+}
+
+
+.cont-fechas h1 {
+    text-align: center;
+}
+
+.fechas_encabezado {
+    border-bottom: solid 3px #b73c06;
+    border-top: solid 1px #b73c06;
+    background-color: #bbbbbb;
+    position: fixed;
+    width: 15%;
+    font-size: 15px;
+
+}
+
+.cont-fechas ul {
+    margin-left: -25%;
+}
+
+.fechas_list {
+    margin-top: 40%;
+    margin-bottom: 80%;
+    width: 100%;
+}
+
+.fechas_list li {
+    padding: 15px;
+    border-bottom: solid #444444 1px;
+    text-align: center;
+}
+
+
+.fechas_list a:hover {
+    color: #b73c06;
+}
+
+.fechas_list a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*  //    SECTION    //  */
+
+p {
+    display: inline-block;
+}
+
+.ubicacion {
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.fecha {
+    width: 20%;
+    display: inline-block;
+}
+
+.horario {
+    width: 20%;
+    display: inline-block;
+}
+
+.motivo {
+    display: inline-block;
+}
+
+
+/*  //    CONT-SECTION    //  */
+
+.cont-section {
+    margin-left: 15%;
+}
+
+.contenedor {
+    border: solid 3px #444444;
+    border-radius: 20px;
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-height: 400px;
+    scroll-margin-top: 190px ;
+    background-color: #bbbbbb;
+    box-shadow: 0px 0px 20px 2px black;
+}
+
+/*  //    CRONICA ENCABEZADO    //  */
+
+.cont-encabezado {
+    background-color: #6f6f5f;
+    border: solid 3px #6f6f5f;
+    border-top-right-radius:17px ;
+    border-top-left-radius:17px ;
+    border-bottom: 2px solid #5e5e4e;
+
+    padding-left: 5%;
+}
+
+/*  //    CRONICA DATA    //  */
+
+.match-data {
+    background-color: #8a8a7f;
+}
+
+.cronica {
+    border-top: solid 2px #556655 ;
+    border-bottom: solid 2px #556655;
+    padding: 2% 3%;
+    height: 100px;
+    overflow: auto;
+}
+
+.cronica::-webkit-scrollbar {
+    width: 1%;
+}
+
+.match-info {
+    display: flex;
+    height: 120px;
+    background-color: #8a8a7f;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+
+/*  //    CRONICA GOLES    //  */
+
+.goles {
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.goles h4 {
+    display: inline-block;
+}
+
+.goles_lista {
+    margin-top: 10px;
+    display: inline-block;
+    width: 15%;
+    height: 80%;
+}
+
+.goles_lista li {
+    padding: 0px;
+    font-size: 15px;
+}
+
+.goles_lista p {
+    margin: 0px;
+}
+
+.gol {
+    color: #dd8d31;
+    min-width: 10%;
+    text-align: center;
+}
+
+/*  //    CRONICA MVP    //  */
+
+
+.mvp {
+    width: 10%;
+    min-width: 10%;
+}
+
+.mvp h5 {
+    display: inline-block;
+    margin: 0px;
+    margin-top: 25%;
+    font-size: .9em;
+}
+
+/*  //    CORNICA FORMACION    //  */
+
+
+.formacion {
+    display: inline-block;
+    height: 120px;
+    padding-left: 10%;
+}
+
+.formacion img {
+    height:100%;
+}
+
+/*  //    CRONICA SUPLENTES    //  */
+
+
+.suplentes {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 10%;
+    min-width: 20%;
+    background: #8a8a7f;
+    background: linear-gradient(90deg, #fefeff 15%, #eeeeef 25%, #8a8a7f 90%);
+    height: 95%;
+    margin: .25% 0px;
+    margin-left: 1%;
+}
+
+.suplentes-info__encabezado {
+    margin: 0;
+    border-bottom: solid 2px #dd8d31;
+    padding: 2px 10%;
+    font-size: 15px;
+
+}
+
+.suplentes-info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.suplentes-info li{
+    margin: 2% auto;
+    padding-left: 5%;
+    font-size: .9em;
+}
