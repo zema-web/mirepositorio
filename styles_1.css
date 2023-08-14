@@ -2,9 +2,13 @@
 
 *{
     font-family: poppins;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    height: 100%;
     background: rgb(183,60,6);
     background: linear-gradient(90deg, rgba(183,60,6,1) 9%, rgba(222,104,53,1) 98%);
 }
@@ -36,13 +40,6 @@ body {
 }
 
 
-/*  //  FIXED  //  */
-
-.fixed {
-    position: sticky;
-    top: 0;
-}
-
 
 /*  //  NAVEGADOR  //  */
 
@@ -54,6 +51,8 @@ body {
     align-items: center;
     border-top: solid 2 px #b73c06;
     border-bottom: solid 5px #333333 ;
+    position: sticky;
+    top: 0;
 }
 
 .menu-list {
@@ -70,7 +69,8 @@ body {
 }
 
 .menu_item a:hover {
-    color:#b73c06
+    color:#b73c06;
+    border-bottom: #b73c06;
 }
 
 li {
@@ -81,54 +81,38 @@ li {
 
 /*  //  MAIN  //  */
 
+.cont-main{
+    display: block;
+}
+
 
 /*  //  estilos del HISTORIAL.HTML  //  */
 
 
 /*  //    Navegador Fechas    //  */
 
+
 .cont-fechas {
-    width: 15%;
-    height: 100%;
-    position: fixed ;
+    width: 100%;
+    height: 90px;
     top: 175px;
     left: 0;
-    overflow: auto;
-    border-right: #222222 solid 3px;
-    background-color: #ffffff88;
-}
-
-.cont-fechas::-webkit-scrollbar {
-    width: 1px;
-}
-
-
-.cont-fechas h1 {
-    text-align: center;
-}
-
-.fechas_encabezado {
-    border-bottom: solid 3px #b73c06;
-    border-top: solid 0px #b73c06;
-    background-color: #bbbbbb;
-    position: fixed;
-    width: 15%;
-    font-size: 15px;
-
+    overflow: auto ;
+    background-color: #ffeeee;
+    position: sticky;
+    top: 45px;
 }
 
 .cont-fechas ul {
-    margin-left: -25%;
+    display: flex;
+    margin: 0;
 }
 
 .fechas_list {
-    margin-top: 40%;
-    margin-bottom: 90%;
-    width: 100%;
 }
 
 .fechas_list li {
-    padding: 15px;
+    padding: 15px 0px;
     border-bottom: solid #444444 1px;
     text-align: center;
 }
@@ -140,7 +124,8 @@ li {
 
 .fechas_list a {
     text-decoration: none;
-    color: black;
+    color: #444444;
+    font-size: .9em;
 }
 
 
@@ -174,12 +159,13 @@ p {
 /*  //    CONT-SECTION    //  */
 
 .cont-section {
-    margin-left: 15%;
+    width: 100%;
 }
 
 .contenedor {
     border: solid 3px #444444;
     border-radius: 20px;
+    height: 400px;
     width: 95%;
     margin: auto;
     margin-top: 2%;
@@ -198,21 +184,21 @@ p {
     border-top-right-radius:17px ;
     border-top-left-radius:17px ;
     border-bottom: 2px solid #5e5e4e;
-
-    padding-left: 5%;
+    padding:2% 5%;
 }
 
 /*  //    CRONICA DATA    //  */
 
 .match-data {
     background-color: #8a8a7f88;
+    padding: 1%;
 }
 
 .cronica {
     border-top: solid 2px #556655 ;
     border-bottom: solid 2px #556655;
     padding: 2% 3%;
-    height: 100px;
+    height: 150px;
     overflow: auto;
 }
 
@@ -233,6 +219,7 @@ p {
 .goles {
     display: inline-block;
     margin-left: 3%;
+    margin-top: 1%;
 }
 
 .goles h4 {
@@ -256,7 +243,7 @@ p {
 }
 
 .gol {
-    color: #dd8d31;
+    color: #b73c06;
     min-width: 10%;
     text-align: center;
 }
@@ -306,7 +293,7 @@ p {
 
 .suplentes-info__encabezado {
     margin: 0;
-    border-bottom: solid 2px #dd8d31;
+    border-bottom: solid 2px #b73c06;
     padding: 2px 10%;
     font-size: 15px;
 
@@ -342,3 +329,134 @@ p {
   ::-webkit-scrollbar-track {
     background-color: #444444; /* Color del track (el área detrás del thumb) */
   }
+
+  /*//  Diseño Responsivo  //*/
+
+
+  @media screen and (max-width: 900px){
+
+    /*  //  ENCABEZADO  //  */
+
+.encabezado {
+    background-image: url(Imagenes/Banner/grandoli_banner.png);
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+
+.encabezado_cont-imagen img {
+    width: 100px;
+}
+
+.encabezado_cont-titulo {
+    font-size: 20px;
+}
+
+/*  //  NAVEGADOR  //  */
+
+.cont-menu {
+    height: 45px;
+    
+}
+
+.menu-list {
+    width: 100%;
+    display: flex;
+}
+
+
+.menu_item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.menu_item a:hover {
+    color:#b73c06
+}
+
+li {
+    list-style: none;
+    margin: 0px 5%;
+}
+
+}
+
+
+@media screen and (max-width: 700px){
+
+    /*  //  ENCABEZADO  //  */
+
+.encabezado {
+    background-image: url(Imagenes/Banner/grandoli_banner.png);
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+
+.encabezado_cont-imagen img {
+    width: 100px;
+}
+
+.encabezado_cont-titulo {
+    font-size: 20px;
+}
+
+/*  //  NAVEGADOR  //  */
+
+.cont-menu {
+    height: 45px;
+    position: sticky;
+    top:0;
+}
+
+.menu-list {
+    width: 100%;
+    display: flex;
+}
+
+
+.menu_item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.menu_item a:hover {
+    color:#b73c06
+}
+
+li {
+    list-style: none;
+    margin: 0px 5%;
+}
+
+.cont-section {
+    height: 900px;
+}
+
+.contenedor {
+    border: solid 3px #444444;
+    border-radius: 20px;
+    height: 900px;
+    width: 98%;
+
+}
+
+.cont-fechas{
+    position: sticky;
+    top: 45px;
+}
+
+.match-info {
+    display: flex;
+    background-color: #8a8a7f88;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+
+}
+
+
